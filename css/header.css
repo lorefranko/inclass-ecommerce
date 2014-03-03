@@ -25,11 +25,17 @@
   margin: 0 0.4em;
 }
 
+.current{
+  background-color: red;
+}
+
 @media only screen and (min-width: 50em) {
 
   .nav {
     margin-top: 0;
     text-align: right;
   }
+
+
 
 }
