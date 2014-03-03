@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{page.title}} · Dinos 'R' Us</title>
+  <meta name="description" content="{{page.meta}}">
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/footer.css">
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/product-list-item.css">
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/product.css">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/promos.css">
 
  </head>
  <body>
@@ -42,6 +44,12 @@
     </nav>
   </div>
 </header>
+
+{% if page.showbanner %}
+<div class="banner">
+  <h1>{{page.bannertext}}</h1>
+</div>
+{% endif %}
 
 {{content}}
 
